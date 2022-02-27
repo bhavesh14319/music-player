@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <title>Music Player</title>
+</head>
+<body>
+    
+    <!-- Player Container -->
+    <div class="playerContainer" id="playerContainer">
+        <!-- Image Container -->
+        <div class="imgContainer" id="imageContaniner">
+            <img src="images/Mann Bharryaa 2.0.jpg" alt="">
+        </div>
+        <!-- Container for song name and singer-->
+            <h2 id="title">Mann Bharryaa - 2.0</h2>
+            <h3 id="singer">B Park</h3>
+        <audio src="music/Mann Bharryaa 2.0.mp3" controls hidden></audio>
+        <!-- Div for progress bar -->
+        <div class="progressContainer" id="progressContainer">
+            <div class="progress" id="progress"></div>
+            <div class="playTime" id="playTime">
+                <span id="currentTime">0.0</span>
+                <span id="Duration">4.26</span>
+            </div>
+           
+        </div>
+        <!-- controls -->
+        <div class="controls" id="controls">
+        <i class="fas fa-backward" id="prev" title="previous"></i>
+        <i class="fas fa-play" id="play" title="play"></i>
+        <i class="fas fa-forward" id="next" title="next"></i>
+        </div>
+    </div>
+
+    <!-- scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
